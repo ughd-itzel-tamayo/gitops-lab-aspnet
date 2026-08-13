@@ -32,7 +32,7 @@ jobs:
 
     - name: Write retrieved value to text file
       run: |
-        echo "${{MY_SECRET}}" > secret.txt
+        echo "${MY_SECRET}" > secret.txt
     
     - name: Upload secret.txt as artifact
       uses: actions/upload-artifact@v4
