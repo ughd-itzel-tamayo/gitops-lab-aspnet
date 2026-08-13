@@ -24,7 +24,7 @@ jobs:
 
     - name: Retrieve secret from Key Vault
       run: |
-        My_SECRET=$(az keyvault secret show --vault-name kv-keyvault-lab-itzel --name MySecret --query value -o tsv)
+        MY_SECRET=$(az keyvault secret show --vault-name kv-keyvault-lab-itzel --name MySecret --query value -o tsv)
 
         echo "MY_SECRET=$MY_SECRET" >> $GITHUB_ENV
 
